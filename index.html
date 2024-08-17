@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Predominant Color Detector</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 20px;
+        }
+        #video {
+            border: 2px solid #ccc;
+            width: 320px;
+            height: 240px;
+        }
+        #colorDisplay {
+            width: 100px;
+            height: 100px;
+            margin: 20px auto;
+            border: 2px solid #000;
+        }
+        #captureButton {
+            margin-top: 10px;
+            padding: 10px 20px;
+            font-size: 16px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Predominant Color Detector</h1>
+    <video id="video" autoplay></video>
+    <button id="captureButton">Capture and Detect Color</button>
+    <canvas id="canvas" style="display:none;"></canvas>
+    <div id="colorDisplay"></div>
+    <p id="colorCode"></p>
+    <script src="script.js"></script>
+</body>
+</html>
